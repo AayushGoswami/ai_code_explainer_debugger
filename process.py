@@ -1,13 +1,15 @@
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
+import streamlit as st
 import groq
 import speech_recognition as sr
 
 # Load environment variables from .env file
-load_dotenv()
+# load_dotenv()
 
 # Get API key from environment variable
-api_key = os.getenv("GROQ_API_KEY")
+# api_key = os.getenv("GROQ_API_KEY")
+api_key = st.secrets["GROQ_API_KEY"]
 
 # Initialize Groq client
 client = groq.Groq(api_key=api_key)
