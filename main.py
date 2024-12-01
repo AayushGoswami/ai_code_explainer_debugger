@@ -2,7 +2,7 @@ import streamlit as st
 from process import explain_code, debug_code
 import io
 
-st.set_page_config(layout="wide", page_title="AI Code Explainer and Debugger", page_icon="👨🏻‍💻")
+st.set_page_config(layout="wide", page_title="AI Code Explainer and Debugger", page_icon="💻")
 
 # Custom CSS for styling
 st.markdown("""
